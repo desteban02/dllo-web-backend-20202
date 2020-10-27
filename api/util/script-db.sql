@@ -37,7 +37,7 @@ CREATE TABLE public.seguimientos (
     id serial NOT NULL,
 	id_mecanico varchar(20) NOT NULL, 
 	placa varchar(20) NOT NULL,
-    fecha datetime  NOT NULL,
+    fecha timestamp  NOT NULL,
 	mano_obra text NOT NULL,
 	repuestos text NOT NULL,	
 	horas integer  NOT NULL,

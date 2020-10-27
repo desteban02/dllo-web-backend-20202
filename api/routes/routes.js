@@ -5,11 +5,13 @@ const userController = require("../controllers/users.controller");
 const motorcycleController = require("../controllers/motorcycles.controller");
 
 router.get("/api/v1", (request, response) => {
-  response.send("sup m8!");
+  response.send("Sup m8!");
 });
 
+/*********************** ENDPOINTS ***************************************/
+
 router
-  .get("/api/v1/users", userController.getUser)
+  .get("/api/v1/users", userController.getUsers)
   .post("/api/v1/users", userController.saveUser)
   .put("/api/v1/users/:id", userController.updateUser)
   .delete("/api/v1/users/:id", userController.deleteUser);
